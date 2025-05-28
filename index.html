@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Programmer Portfolio - Farreli satria</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f2027;  /* fallback for old browsers */
+    background: linear-gradient(90deg, #2c5364, #203a43, #0f2027);
+    color: #e0e6f0;
+    scroll-behavior: smooth;
+  }
+
+  header {
+    background: rgba(0,0,0,0.7);
+    padding: 2rem 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #00ff99;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    margin: 0.3rem 0 0 0;
+    font-weight: 400;
+    color: #a1eafb;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    color: #e0e6f0;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #00ff99;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem 4rem;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #00ff99;
+    border-bottom: 3px solid #00ff99;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .skill-item {
+    background: #203a43;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #00ff99;
+    box-shadow: 0 0 8px #00ff9970;
+    transition: transform 0.3s ease;
+  }
+
+  .skill-item:hover {
+    transform: scale(1.1);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    background: #203a43;
+    border-radius: 12px;
+    padding: 1.5rem 1rem 2rem;
+    box-shadow: 0 0 12px #00ff9970;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 18px #00ff99dd;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+    color: #00ff99;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .project-desc {
+    flex-grow: 1;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #c4d7e0;
+    margin-bottom: 1rem;
+  }
+
+  .project-link {
+    text-align: right;
+  }
+
+  .project-link a {
+    color: #00ff99;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .project-link a:hover {
+    border-color: #00ff99;
+  }
+
+  .contact-info {
+    font-size: 1.1rem;
+    color: #a1eafb;
+    line-height: 1.5;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    color: #4a6d7c;
+    background: rgba(0,0,0,0.5);
+    font-size: 0.9rem;
+    user-select: none;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .project-card {
+      padding: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Farreli satria</h1>
+  <p>Full Stack Programmer &amp; Developer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about-text">
+      Hello! I'm a passionate programmer with experience building web and software applications.
+      I enjoy solving problems, learning new technologies, and creating efficient, scalable solutions.
+      Welcome to my portfolio!
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">React</div>
+      <div class="skill-item">Node.js</div>
+      <div class="skill-item">HTML &amp; CSS</div>
+      <div class="skill-item">Django</div>
+      <div class="skill-item">SQL</div>
+      <div class="skill-item">Git</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-title">Project One</div>
+        <div class="project-desc">
+          A responsive web application to track personal expenses with real-time charts and user authentication.
+        </div>
+        <div class="project-link">
+          <a href="#" target="_blank" rel="noopener">View Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Project Two</div>
+        <div class="project-desc">
+          A chatbot built with NLP techniques to assist users in customer support scenarios.
+        </div>
+        <div class="project-link">
+          <a href="#" target="_blank" rel="noopener">Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Project Three</div>
+        <div class="project-desc">
+          An automated data scraper that collects and analyzes data from multiple websites for market research.
+        </div>
+        <div class="project-link">
+          <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-info">
+      Feel free to reach out to me via email or connect with me on LinkedIn.
+    </p>
+    <p class="contact-info">
+      Email: <a href="mailto:your.email@example.com" style="color:#00ff99;">your.email@example.com</a> <br />
+      LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener" style="color:#00ff99;">linkedin.com/in/yourprofile</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>
+
